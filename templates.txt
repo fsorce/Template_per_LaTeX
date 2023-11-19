@@ -1,0 +1,34 @@
+\begin{theorem}[Snake Lemma]
+    \[\begin{tikzcd}
+        & {\ker a} & {\ker b} & {\ker c} \\
+        & A & B & C & 0 \\
+        0 & D & E & F \\
+        & {\coker a} & {\coker b} & {\coker c}
+        \arrow[draw=none, from=2-3, to=3-3, ""{coordinate, name=Z}]
+        \arrow["d", from=1-4, to=4-2, rounded corners, to path={
+            -- ([xshift=10ex]\tikztostart.east) 
+            |- ([xshift=-15ex]Z) [near end]\tikztonodes
+            -| ([xshift=-10ex]\tikztotarget.west)
+            -- (\tikztotarget.west)
+        }]
+        \arrow[from=2-2, to=2-3]
+        \arrow[from=2-3, to=2-4]
+        \arrow[from=3-2, to=3-3]
+        \arrow[from=3-3, to=3-4]
+        \arrow["a"'{pos=0.2}, from=2-2, to=3-2, crossing over]
+        \arrow[from=3-1, to=3-2]
+        \arrow[from=2-4, to=2-5]
+        \arrow["b"'{pos=0.2}, from=2-3, to=3-3, crossing over]
+        \arrow["c"'{pos=0.2}, from=2-4, to=3-4, crossing over]
+        \arrow[from=1-2, to=2-2]
+        \arrow[from=1-3, to=2-3]
+        \arrow[from=1-4, to=2-4]
+        \arrow[from=3-2, to=4-2]
+        \arrow[from=3-3, to=4-3]
+        \arrow[from=3-4, to=4-4]
+        \arrow[from=1-2, to=1-3]
+        \arrow[from=1-3, to=1-4]
+        \arrow[from=4-2, to=4-3]
+        \arrow[from=4-3, to=4-4]
+    \end{tikzcd}\]
+\end{theorem}
