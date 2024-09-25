@@ -1,2 +1,4 @@
-# Istituzioni di Analisi
-Dispense del corso di istituzioni di analisi tenuto dal prof. Pietro Majer in a.a. 2024/25
+# Template_per_LaTeX
+Template che uso per scrivere in LaTeX.
+
+Nei file di stile trovate commentati diversi comandi che possono essere utili dal punto di vista stilistico.
