@@ -14,7 +14,19 @@
 \usepackage{multirow}
 \usepackage{cancel}
 
-\usepackage[italian]{babel}
+\usepackage[english]{babel}
+
+
+%\usepackage[position=top]{subfig}
+%\usepackage{setspace}
+%\usepackage{mdframed}
+%\usepackage{calc}
+\usepackage{enumerate}
+%\usepackage{centernot}
+%\usepackage{comment}
+
+%\usepackage{ mathdots }
+
 
 
 % Ambienti per teoremi =================================
@@ -30,16 +42,23 @@
 
 % I nuovi ambienti sono costruiti in modo da andare alla riga successiva
 
+%\newtheoremstyle{customth}
+%{\topsep}{\topsep}{\itshape}{}{\bfseries}{.}{\newline}{}
+%\newtheoremstyle{customdef}
+%{\topsep}{\topsep}{\normalfont}{}{\bfseries}{.}{\newline}{}
+%\newtheoremstyle{customrem}
+%{\topsep}{\topsep}{\normalfont}{}{\itshape}{.}{\newline}{}
+
 \newtheoremstyle{customth}
-{\topsep}{\topsep}{\itshape}{}{\bfseries}{.}{\newline}{}
+{\topsep}{\topsep}{\itshape}{}{\bfseries}{.}{.5em}{}
 \newtheoremstyle{customdef}
-{\topsep}{\topsep}{\normalfont}{}{\bfseries}{.}{\newline}{}
+{\topsep}{\topsep}{\normalfont}{}{\bfseries}{.}{.5em}{}
 \newtheoremstyle{customrem}
-{\topsep}{\topsep}{\normalfont}{}{\itshape}{.}{\newline}{}
+{\topsep}{\topsep}{\normalfont}{}{\itshape}{.}{.5em}{}
 
 
 \theoremstyle{customth}
-\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{theorem}{Teorema}[section]
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollario}
 \newtheorem{proposition}[theorem]{Proposizione}
@@ -51,6 +70,12 @@
 \newtheorem{definition}[theorem]{Definizione}
 \newtheorem{notation}[theorem]{Notazione}
 \newtheorem{example}[theorem]{Esempio}
+\newtheorem{exercise}[section]{Esercizio}
+
+\newenvironment{solution}
+  {\renewcommand\qedsymbol{$\square$}\begin{proof}[Soluzione]}
+  {\end{proof}}
+
 
 \makeatletter
 \renewenvironment{proof}[1][\proofname]

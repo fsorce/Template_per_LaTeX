@@ -162,23 +162,63 @@
 \newcommand{\uly}{{\underline{y}}}
 \newcommand{\ulz}{{\underline{z}}}
 
+%-------------- Categorie ----------------------
+\DeclareMathOperator{\Ab}{Ab}
+\DeclareMathOperator{\Arr}{Arr}
+\DeclareMathOperator{\Cat}{Cat}
+\DeclareMathOperator{\Coh}{Coh}
+\DeclareMathOperator{\Grp}{Grp}
+\DeclareMathOperator{\LRS}{LRS}
+\DeclareMathOperator{\Mod}{Mod}
+\DeclareMathOperator{\Mon}{Mon}
+\DeclareMathOperator{\Open}{Open}
+\DeclareMathOperator{\Pre}{Pre}
+\DeclareMathOperator{\QCoh}{QCoh}
+\DeclareMathOperator{\Ring}{Ring}
+\DeclareMathOperator{\Sch}{Sch}
+\DeclareMathOperator{\Set}{Set}
+\DeclareMathOperator{\Sh}{Sh}
+\DeclareMathOperator{\Top}{Top}
+
 %---------- Funzioni standard ------------------
 \DeclareMathOperator{\Adj}{Adj}
 \DeclareMathOperator{\adj}{adj}
 \DeclareMathOperator{\Ann}{Ann}
 \DeclareMathOperator{\Arg}{Arg}
 \DeclareMathOperator{\Ass}{Ass}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Bl}{Bl}
+\DeclareMathOperator{\CDiv}{CDiv}
 \DeclareMathOperator{\cha}{char}
+\DeclareMathOperator{\Cl}{Cl}
 \DeclareMathOperator{\cod}{cod}
+\DeclareMathOperator{\codim}{codim}
 \DeclareMathOperator{\coker}{coker}
 \DeclareMathOperator{\comb}{Comb}
+\DeclareMathOperator{\Cone}{Cone}
+\DeclareMathOperator{\Conv}{Conv}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Der}{Der}
+\DeclareMathOperator{\Diag}{Diag}
+\DeclareMathOperator{\Div}{Div}
+\renewcommand{\div}{\mathrm{div}}
 \DeclareMathOperator{\dom}{dom}
 \DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Ext}{Ext}
 \DeclareMathOperator{\Fix}{Fix}
+\DeclareMathOperator{\Frac}{Frac}
+\DeclareMathOperator{\Fun}{Fun}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\gldim}{gldim}
+\DeclareMathOperator{\Gr}{Gr}
 \DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Ht}{ht}
 \DeclareMathOperator{\imm}{Imm}
 \DeclareMathOperator{\Ind}{Ind}
 \DeclareMathOperator*{\infess}{infess}
+\DeclareMathOperator{\length}{length}
+\DeclareMathOperator{\Mat}{Mat}
 \DeclareMathOperator{\mcd}{mcd}
 \DeclareMathOperator{\mcm}{mcm}
 \DeclareMathOperator{\Min}{Min}
@@ -186,21 +226,33 @@
 \DeclareMathOperator{\obj}{obj}
 \DeclareMathOperator{\orb}{orb}
 \DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\PGL}{PGL}
 \DeclareMathOperator{\Proj}{Proj}
+\DeclareMathOperator{\projdim}{projdim}
+\DeclareMathOperator{\Relint}{Relint}
 \DeclareMathOperator{\Res}{Res}
 \DeclareMathOperator{\rnk}{rnk}
 \DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\SO}{SO}
 \DeclareMathOperator{\Span}{Span}
 \DeclareMathOperator{\Spec}{Spec}
 \DeclareMathOperator{\stab}{stab}
+\DeclareMathOperator{\Star}{Star}
 \DeclareMathOperator*{\supess}{supess}
 \DeclareMathOperator{\Supp}{Supp}
 \DeclareMathOperator{\supp}{supp}
 \DeclareMathOperator{\Sym}{Sym}
+\DeclareMathOperator{\Tor}{Tor}
 \DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\trdeg}{trdeg}
+
 
 \newcommand{\Real}{\,\Re\mathfrak{e}}
 \newcommand{\Imag}{\,\Im\mathfrak{m}}
+
+
 
 %-------------- Frecce -------------------------
 \newcommand{\coimplies}{\Longleftrightarrow}
@@ -298,31 +350,21 @@
 
 %---------------- Altro -----------------------
 \newcommand{\bs}{\setminus}
-\newcommand{\res}[1]{\raisebox{-.5ex}{$|$}_{#1}}
+\newcommand{\bw}{\bigwedge}
+\newcommand{\del}{\partial}
+\newcommand{\ii}{^{-1}}
+\newcommand{\nor}{\triangleleft}
+\newcommand{\nz}{\bs\{0\}}
+\newcommand{\op}{^{op}}
+\newcommand{\powerset}{\mathscr{P}}
+\newcommand{\pr}{\mathrm{pr}}
 \newcommand{\quot}[2]{\faktor{#1}{#2}}
+\newcommand{\res}[1]{\raisebox{-.5ex}{$|$}_{#1}}
 \newcommand{\sep}{\,\middle|\,}
 
-\newcommand{\ii}{^{-1}}
-\newcommand{\nz}{\bs\{0\}}
-
-\newcommand{\powerset}{\mathscr{P}}
-\newcommand{\del}{\partial}
 \newcommand{\0}{{\underline{0}}}
 \newcommand{\1}{{\vcenter{\hbox{\scalebox{1.2}{$\mathds{1}$}}}}}
 
-
-\newcommand{\GL}{\mathrm{GL}}
-\newcommand{\PGL}{\mathrm{PGL}}
-%\NewDocumentCommand{\PGL}{o m}{
-%    \IfNoValueTF{#1}
-%        {{\mathbb{P}GL({#2})}}
-%    {{\mathbb{P}GL_{#1}({#2})}}
-%}
-%\NewDocumentCommand{\GL}{o m}{
-%    \IfNoValueTF{#1}
-%        {{GL({#2})}}
-%    {{GL_{#1}({#2})}}
-%}
 \newcommand{\znz}[1]{{\Z/{#1}\Z}}
 
 
